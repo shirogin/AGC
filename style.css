@@ -1,0 +1,161 @@
+@font-face {
+    font-family: "Druk"; 
+    src: url("./Druk\ Web\ Bold\ Regular.ttf");
+}
+
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+.navSub{
+    height: 15vh;
+}
+body{
+    background: linear-gradient(100deg,#3d1d44 0,#191120 79%,#231026 100%);
+    font-size: 0.9rem;
+    color: white;
+}
+h1,h2{
+    font-family: "Druk";
+    color: white;
+    font-weight: bold;
+}
+.dropdown-menu{
+    min-width: 2rem;
+    
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top:  1px solid transparent;
+
+    padding:0;
+    background-color: transparent;
+}
+.dropdown-item{
+    padding:.25rem 1rem;
+    color: white;
+}
+.dropdown-item:last-child {
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+.dropdown-item:hover{
+    background: rgba(255,255,255,.5);
+}
+.dropdown-toggle{
+    padding:.25rem 1rem;
+
+}
+.Title{
+    padding: 3vw 0 0 0;
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    line-height: 0.8;
+    text-shadow: 15px 15px 30px rgba(17,15,38,.7);
+    display: flex;
+    }
+.navbar{
+    background-color: transparent;
+    padding: .5rem 6rem;
+}
+.navbar-toggler{
+    margin-right: 1rem;
+}
+.navbar-brand{
+    background-image: url(./LogoX.png);
+    background-position: center;
+    background-size: cover;
+    height: 2.5vw;
+    margin-top: 1vh;
+    width: 8.2vw;
+    transition: background 1s ease-in;
+}
+.navbar-brand.NTop,.navbar-brand:hover{
+    /*filter: grayscale(100%) invert(100%);*/
+    background-image: url(./LogoXW.png);
+}
+.nav-item{
+    margin: auto 0.6vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.btn-social-icon{
+    border:0.1vw solid rgba(255,255,255,.5);
+    color: rgba(255,255,255,.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    
+    text-decoration: none;
+}
+.btn-social-icon:hover{
+    border:0.1vw solid rgba(255,255,255,.75);
+    color:rgba(255,255,255,.75);
+    text-decoration: none;
+}
+.Mholder{
+    display: flex;
+}
+.GamePad{
+    color:white;
+}
+.Mbtn,.Mbtns{
+    font-size: 0.8rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    padding :1rem;
+    color: white;
+    text-decoration: none;
+    margin: 1vw 1vw;
+    background-color: #662d8c;
+    background:  linear-gradient(to right,#ff005b,#662d8c);
+    box-shadow: 0 7px 8px -4px #662d8c, 0 10px 30px 4px rgba(207,0,255,.5), 0 4px 5px -1px #2b0950, 0 0 1px 0 rgba(207,0,255,.5), inset 0 0 0 1px rgba(255,255,255,.24);
+    transition: transform 0.5s;
+    align-items: center;
+    text-align: center;
+}
+.Mbtns:hover,.Mbtn:hover{
+    box-shadow:0 10px 10px -4px #662d8c, 0 15px 30px 4px rgba(207,0,255,.5), 0 7px 7px -1px #2b0950, 0 1px 1px 0 rgba(207,0,255,.5), inset 0 0 8px 0 #ff005b;
+    color: white;
+    transform: translate(0,-0.2vw);
+    text-decoration: none;
+}
+section{
+    padding:0 5vw;
+}
+.Mbtns{
+    background:  linear-gradient(to right,#2b0950,#411273);
+    display: flex;
+
+}
+.Mbtns svg{
+    color: white;
+    width: 1.9rem;
+    margin-right: .5rem;
+}
+.right{
+    margin: Auto 0 auto auto;
+}
+.section{
+    min-height: 60vh;
+}
+.section .Title{
+    font-size: 5rem;
+    margin-bottom: 10vh;
+}
+.section img{
+    filter: grayscale(100%);
+    transition: filter 0.5s ease-in, transform 0.5s ease-in-out;
+}
+.section img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}

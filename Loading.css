@@ -1,0 +1,28 @@
+.Loading{
+    background: linear-gradient(100deg,#3d1d44 0,#191120 79%,#231026 100%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 10000;
+}
+.Loading svg{
+  margin: auto;
+  width: 60vw;
+  overflow: visible;
+}
+html,body{
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    padding:0;
+    overflow: hidden;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+  
+#X{
+    transform-origin: 85% 55%;
+    animation: spin 4s linear infinite;
+}
