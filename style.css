@@ -159,7 +159,9 @@ section{
     filter: grayscale(0%);
     transform: scale(1.1);
 }
-
+.seven{
+    filter: grayscale(60%);
+}
 h5{
     text-indent: 2rem;
 }
