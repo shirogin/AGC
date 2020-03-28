@@ -60,6 +60,7 @@ h1,h2{
 .navbar{
     background-color: transparent;
     padding: .5rem 6rem;
+    transition: transform 1s ease-in-out;
 }
 .navbar-toggler{
     margin-right: 1rem;
@@ -160,6 +161,9 @@ section{
     transform: scale(1.1);
 }
 
+.Top{
+    transform: translateY(-5rem);
+}
 h5{
     text-indent: 2rem;
 }
