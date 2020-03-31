@@ -78,15 +78,20 @@ h1,h2{
     width: 8.2vw;
     transition: background 1s ease-in;
 }
+
 .navbar-brand.NTop,.navbar-brand:hover{
     /*filter: grayscale(100%) invert(100%);*/
     background-image: url(../img/LogoXW.png);
 }
+
 .nav-item{
-    margin: auto 0.6vw;
+    margin: auto 0.3rem;
     justify-content: center;
     align-items: center;
     display: flex;
+}
+.show .nav-item{
+    margin: .2rem auto;
 }
 .btn-social-icon{
     border:0.1vw solid rgba(255,255,255,.5);
@@ -235,6 +240,7 @@ h5{
     display: flex;
     align-items: center;
 }
+
 #Partners{
     min-height: 60vh;
 }
@@ -296,5 +302,20 @@ section{
     }
     .Contact form{
         margin: 4rem 2rem 4rem auto!important;
+    }
+}
+@media (max-width: 720px){
+    .navbar-brand{
+    height: 5.5vw;
+    width: 16vw;
+    }
+    .navbar{
+        background: linear-gradient(100deg,#3d1d44 0,#2e1835 100%);
+    }
+    .Top{
+        transform: translateY(-50rem);
+    }
+    .Contact .MainLogo{
+        left: 0%;
     }
 }
