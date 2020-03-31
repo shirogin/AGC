@@ -126,6 +126,7 @@ h1,h2{
     transition: transform 0.5s;
     align-items: center;
     text-align: center;
+    z-index: 1000;
 }
 .Mbtns:hover,.Mbtn:hover{
     box-shadow:0 10px 10px -4px #662d8c, 0 15px 30px 4px rgba(207,0,255,.5), 0 7px 7px -1px #2b0950, 0 1px 1px 0 rgba(207,0,255,.5), inset 0 0 8px 0 #ff005b;
@@ -154,6 +155,7 @@ header,section{
 }
 .section{
     min-height: 40vh;
+    margin-bottom: 1rem;
 }
 .section .Title{
     font-size: 5rem;
@@ -188,11 +190,14 @@ h5{
 .card *{
     color: white;
 }
-#Games .card{
-    height: 40rem;
-} 
+#Games .card h4{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
 #Games .card p{
-    height: 80%;
+    height: 14rem;
     overflow-y: auto;
 } 
 .owl-nav button {
@@ -275,4 +280,21 @@ section{
 }
 .Animate.AnimatedR,.Animate.AnimatedL{
     transform: translate(0);
+}
+.Contact{
+    overflow: hidden;
+}
+.Contact form{
+    margin: 4rem auto 4rem auto!important;
+}
+.Contact .MainLogo{
+    left: 15%;
+}
+@media (min-width: 1000px){
+    .Contact .MainLogo{
+        left: 15%;
+    }
+    .Contact form{
+        margin: 4rem 2rem 4rem auto!important;
+    }
 }
