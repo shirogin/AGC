@@ -75,3 +75,6 @@ $(window).scroll(function(event){
    }
    lastScrollTop = st;
 });
+$('#Story').waypoint(function() {
+    alert('The element has appeared on the screen.');
+ });

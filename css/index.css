@@ -196,10 +196,15 @@ h5{
     overflow-y: auto;
 } 
 .owl-nav button {
-    position: absolute;
-    top: 30%;
     margin: 0;
     transition: all 0.3s ease-in-out;
+}
+.owl-nav span{
+    font-size: 7rem;
+    transition: color .5s ease-in-out;
+}
+.owl-nav span:hover{
+    color: rgba(255,255,255,.5);
 }
 .owl-nav button.owl-prev {
     left: -3rem;
@@ -210,14 +215,9 @@ h5{
 
 .owl-nav button {
     position: absolute;
-    top: 50%;
+    top: 35%;
     transform: translateY(-50%);
     background: transparent!important
-}
-span {
-    font-size: 7rem;    
-    position: relative;
-    top: -5px;
 }
 .owl-nav button:focus {
     outline: none;
@@ -246,4 +246,33 @@ span {
 }
 .Partner img,.Partner svg{
     z-index: 20000;
+}
+#Contact .Title{
+    margin-bottom: 4rem;
+}
+
+
+section{
+    overflow-y: hidden;
+}
+
+/*-----------Animation-----------------*/
+.AnimatedR,.AnimatedL,.Animated{
+    opacity: 0;
+    transition:opacity 1s ease-in-out;
+}
+.AnimatedL{
+    transform: translate(100%,0);
+}
+.AnimatedR{
+    transform: translate(-100%,0);
+}
+.AnimatedR,.AnimatedL{
+    transition: transform 1s ease-in-out;
+}
+.Animate.AnimatedR,.Animate.AnimatedL,.Animate.Animated{
+    opacity: 1;
+}
+.Animate.AnimatedR,.Animate.AnimatedL{
+    transform: translate(0);
 }
