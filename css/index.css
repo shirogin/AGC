@@ -311,6 +311,7 @@ section{
     }
     .navbar{
         background: linear-gradient(100deg,#3d1d44 0,#2e1835 100%);
+        padding: .5rem 1rem;
     }
     .Top{
         transform: translateY(-50rem);
